@@ -1,7 +1,7 @@
 \documentclass[12pt]{article}
 
 \usepackage[utf8]{inputenc}
-\usepackage{amsmath, amssymb}
+\usepackage{amsmath, amssymb, tikz, graphicx}
 
 \title{Statistics 100A}
 \author{Clayton Castro}
@@ -95,6 +95,38 @@ Probability defined on an event:
 
 % Lebegue measure \rightarrow probability equals counting
 
-Random Variable 
+\section{Lecture 3}
+
+A real population of people, under purely random sampling or imagined
+population of equally likely possibilities.
+
+\begin{center}
+\begin{tikzpicture}
+  \coordinate (center) at (2.5,1.5);
+  \draw[thick] (0,0) rectangle (5,3);
+  \filldraw[fill=lime!60!black, draw=black] (center) circle (1);
+  \node at (center) {\Large $A$};
+  \node at (4.7,2.7) {\Large $\Omega$};
+\end{tikzpicture}
+\[
+    P(A) = \frac{|A|}{|\Omega|}
+\]
+\end{center}
+Axiom 0.\\
+Can always translate a problem into equally likely setting.
+
+\begin{center}
+\rule{4cm}{0.4pt}
+\end{center}
+
+\begin{center}
+\includegraphics[width=0.4\textwidth]{conditional-probability.png}
+\end{center}
+
+
+\[
+    P(A|B) = \frac{|A \cap B|}{|B|} = \frac{}{}
+\]
+
 
 \end{document}
